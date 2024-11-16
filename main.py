@@ -36,14 +36,14 @@ photo = "photo.jpg"
 
 credit ="😎𝖘cᾰ𝗺𝗺ⲉ𝗿:)™~" 
 OWNER = int(os.environ.get("OWNER", 5892781710))      #replace your user id 
-# try: 
-#     ADMINS=[] 
-#     for x in (os.environ.get("ADMINS", "7326397503 5702090016").split()):     ##replace your user id  (for multiple userid use white space) e.g. "123456 987456" <<- two userid ka example haa yee 
-#         # jitni userid dalni ha usti daloo ...
-#         ADMINS.append(int(x)) 
-# except ValueError: 
-#         raise Exception("Your Admins list does not contain valid integers.") 
-# ADMINS.append(OWNER)
+try: 
+    ADMINS=[] 
+    for x in (os.environ.get("ADMINS", " 5892781710 6443117126").split()):     ##replace your user id  (for multiple userid use white space) e.g. "123456 987456" <<- two userid ka example haa yee 
+        # jitni userid dalni ha usti daloo ...
+        ADMINS.append(int(x)) 
+except ValueError: 
+        raise Exception("Your Admins list does not contain valid integers.") 
+ADMINS.append(OWNER)
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
 bot = Client("bot",    
    bot_token="7528821041:AAHt_CKQY-1OQHg4DHR_4ai8GxHk82W9594",    
